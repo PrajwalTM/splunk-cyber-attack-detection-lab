@@ -4,13 +4,11 @@ This folder contains all visual proof (screenshots) of attack executions, log vi
 
 ---
 
-## 🧱 Step 01 – Lab Setup
+### Lab Network Settings (NAT vs Host-only)
 
-| Description | File |
-|------------|------|
-| VirtualBox network adapters (NAT + Host-only) | `lab_network_settings.png` |
-| IP address configuration of all machines | `ip_addresses.png` |
-| Splunk listening on port 514 | `splunk_listener_514.png` |
+| NAT Adapter | Host-only Adapter |
+|-------------|--------------------|
+| ![NAT](lab_network_nat.png) | ![Host-only](lab_network_hostonly.png) |
 
 ---
 
