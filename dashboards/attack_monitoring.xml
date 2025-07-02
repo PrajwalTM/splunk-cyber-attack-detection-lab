@@ -1,1 +1,15 @@
+<form>
+  <label>Linux Attack Monitoring</label>
+  <row>
+    <panel>
+      <title>FTP Logins</title>
+      <chart>
+        <search>
+          <query>index=linux_logs sourcetype=syslog "ftp"</query>
+        </search>
+        <option name="charting.chart">column</option>
+      </chart>
+    </panel>
+  </row>
+</form>
 
