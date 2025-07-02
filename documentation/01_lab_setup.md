@@ -45,9 +45,6 @@ Enable Splunk to receive logs via syslog on port 514:
    - **Source Type**: `syslog`
    - **Index**: `linux_logs`
 
-📸  
-![Splunk UDP 514 Setup](../screenshots/splunk_listener_514.png)
-
 ---
 
 ## 🧾 Rsyslog on Metasploitable
