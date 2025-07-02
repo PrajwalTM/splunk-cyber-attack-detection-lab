@@ -37,3 +37,12 @@ ssh://: Target protocol (port 22)
 -V: Verbose mode
 
 -f: Stop after a valid credential is found
+
+✅ Result
+Attack executed with Hydra over SSH
+
+Syslog data collected from Metasploitable
+
+Detection query confirms failed login patterns
+
+Can be visualized via a Splunk dashboard or alert
