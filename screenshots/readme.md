@@ -4,11 +4,15 @@ This folder contains all visual proof (screenshots) of attack executions, log vi
 
 ---
 
-### Lab Network Settings (NAT vs Host-only)
+### Lab Network Settings
 
-| NAT Adapter | Host-only Adapter |
-|-------------|--------------------|
-| ![NAT](lab_network_nat.png) | ![Host-only](lab_network_hostonly.png) |
+**NAT Adapter:**
+
+![NAT Adapter](lab_network_nat.png)
+
+**Host-Only Adapter:**
+
+![Host-Only Adapter](lab_network_hostonly.png)
 
 ---
 
