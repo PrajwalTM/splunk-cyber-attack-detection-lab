@@ -32,9 +32,6 @@ Each VM uses two network adapters:
 | Metasploitable | `192.168.56.105` |
 | Splunk (Win)   | `192.168.56.104` |
 
-📸 *Check your IPs with `ip a` or `ipconfig`*  
-![IP Address Check](../screenshots/ip_addresses.png)
-
 ---
 
 ## 📝 Splunk Input Setup
