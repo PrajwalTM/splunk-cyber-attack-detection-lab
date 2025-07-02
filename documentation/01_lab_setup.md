@@ -26,7 +26,7 @@
 1. In Splunk: `Settings → Data Inputs → UDP → Add`
 2. Port: `514`
 3. Source Type: `syslog`
-4. Index: `linux_logs`
+4. Index: `linux_log`
 
 ## 🧾 Rsyslog on Metasploitable
 
