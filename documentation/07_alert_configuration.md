@@ -1,19 +1,38 @@
-# 🚨 06_alert_configuration.md — Configure Alerts in Splunk
+---
 
-This document explains how to manually create alerts in Splunk to detect cyberattacks simulated from Kali Linux on Metasploitable 2, and visualize them in dashboards.
+## ⚙️ Step-by-Step: Configure "Log Event" Trigger Action
+
+Once your alert search is ready and you’ve set the trigger conditions, follow these steps to configure the **Log Event** action.
 
 ---
 
-## ✅ Prerequisites
+### ✅ Step 1: Enable "Log Event" Trigger
 
-Make sure:
+- In the alert creation window:
+  - Scroll to **Trigger Actions**
+  - ✅ Check **Log Event**
 
-- Splunk is installed and accessible (`http://localhost:8000`)
-- Index `linux_logs` exists and is receiving logs from Metasploitable
-- Sourcetype used is `syslog`
-- Your attack logs are searchable in Splunk
+---
 
-### 🔍 Test Search:
+### ✏️ Step 2: Define the Log Event Parameters
 
-```spl
-index=linux_logs sourcetype=syslog
+You will see the following fields under "Log Event". Fill them as shown below:
+
+| Field         | Value                          | Description                            |
+|---------------|--------------------------------|----------------------------------------|
+| **Source**    | `alert:nmap_scan`              | You can name the source for tracking   |
+| **Sourcetype**| `nmap_alert`                   | Custom sourcetype for alerts           |
+| **Host**      | `splunk_server`                | Identifies where the alert is from     |
+| **Index**     | `linux_logs`                   | Use the index receiving syslog data    |
+| **Event**     | `Nmap Scan Detected` or `$name$` | What should be logged when triggered |
+
+---
+
+### 📥 Example Filled Form
+
+```text
+Source:       alert:nmap_scan  
+Sourcetype:   nmap_alert  
+Host:         splunk_server  
+Index:        linux_log  
+Event:        Nmap Scan Detected from $result.src_ip$
