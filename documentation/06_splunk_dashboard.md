@@ -60,6 +60,4 @@ This includes:
 
 > Upload your screenshot to `screenshots/splunk_dashboard_attacks.png`
 
-```markdown
-![Splunk Dashboard - Cyber Attack Monitoring](../screenshots/splunk_dashboard_attacks.png)
 
