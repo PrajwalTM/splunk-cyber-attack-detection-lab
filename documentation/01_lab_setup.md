@@ -1,34 +1,61 @@
 # ⚙️ Lab Setup
 
+---
+
 ## 🔧 VM Environment
 
-| Machine         | OS / Tool          | Purpose         |
-|----------------|---------------------|-----------------|
-| Kali Linux     | Attacker            | Run brute-force |
-| Metasploitable | Vulnerable Target   | Simulate weak services |
-| Windows        | Splunk Enterprise   | Monitor logs |
+| Machine        | OS / Tool          | Purpose                        |
+|----------------|--------------------|--------------------------------|
+| Kali Linux     | Kali Rolling       | Attacker – Run brute-force, scans |
+| Metasploitable | Metasploitable 2   | Vulnerable Target – Simulate weak services |
+| Windows        | Splunk Enterprise  | Monitor logs & trigger alerts |
+
+---
 
 ## 🔗 Network Setup (VirtualBox or VMware)
 
-- **Adapter 1 (NAT):** For Internet access
-- **Adapter 2 (Host-Only):** For internal lab communication
+Each VM uses two network adapters:
 
-### 🧠 IP 
+- **Adapter 1 (NAT)**: For Internet access  
+  ![NAT Adapter](../screenshots/lab_network_nat.png)
 
-| Machine         | IP Address         |
-|----------------|---------------------|
-| Kali Linux     | 192.168.56.103      |
-| Metasploitable | 192.168.56.105      |
-| Splunk (Win)   | 192.168.56.104      |
+- **Adapter 2 (Host-Only)**: For isolated communication  
+  ![Host-Only Adapter](../screenshots/lab_network_hostonly.png)
+
+---
+
+## 🧠 IP Address Allocation
+
+| Machine        | IP Address        |
+|----------------|------------------|
+| Kali Linux     | `192.168.56.103` |
+| Metasploitable | `192.168.56.105` |
+| Splunk (Win)   | `192.168.56.104` |
+
+📸 *Check your IPs with `ip a` or `ipconfig`*  
+![IP Address Check](../screenshots/ip_addresses.png)
+
+---
 
 ## 📝 Splunk Input Setup
 
-1. In Splunk: `Settings → Data Inputs → UDP → Add`
-2. Port: `514`
-3. Source Type: `syslog`
-4. Index: `linux_log`
+Enable Splunk to receive logs via syslog on port 514:
+
+1. Go to:  
+   `Settings → Data Inputs → UDP → Add New`
+2. Fill in:
+   - **Port**: `514`
+   - **Source Type**: `syslog`
+   - **Index**: `linux_logs`
+
+📸  
+![Splunk UDP 514 Setup](../screenshots/splunk_listener_514.png)
+
+---
 
 ## 🧾 Rsyslog on Metasploitable
 
-Edit `/etc/rsyslog.conf`:
+Edit the Rsyslog config to forward logs to the Splunk server:
 
+```bash
+sudo nano /etc/rsyslog.conf
