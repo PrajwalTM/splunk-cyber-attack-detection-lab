@@ -27,7 +27,10 @@ Simulate a brute-force SSH attack on Metasploitable 2 using Hydra and detect the
 hydra -l msfadmin -P /usr/share/wordlists/rockyou.txt ssh://192.168.56.105 -V -f
 
 
-💡 Explanation:
+---
+
+
+#💡 Explanation:
 -l msfadmin: Username on Metasploitable
 
 -P rockyou.txt: Password list
