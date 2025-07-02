@@ -8,9 +8,9 @@ Create alerts in Splunk to **detect real-time attacks** and notify you (via log,
 
 ## 📘 Prerequisites
 
-- Index: `linux_logs`
+- Index: `linux_log`
 - Sourcetype: `syslog`
-- Data is being received in real-time (test with: `index=linux_logs`)
+- Data is being received in real-time (test with: `index=linux_log`)
 
 ---
 
