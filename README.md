@@ -4,7 +4,7 @@ This project simulates real-world attacks using **Kali Linux** on a vulnerable *
 
 ## 📘 Project Overview
 
-| Machine         | Role                | IP Address (example) |
+| Machine         | Role                | IP Address |
 |----------------|---------------------|-----------------------|
 | Kali Linux      | Attacker             | 192.168.56.103        |
 | Metasploitable 2| Vulnerable Target    | 192.168.56.105        |
