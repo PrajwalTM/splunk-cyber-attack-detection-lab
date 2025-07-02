@@ -1,15 +1,53 @@
-<form>
-  <label>Linux Attack Monitoring</label>
+<dashboard>
+  <label>Attack Monitoring Dashboard</label>
+  <description>Monitor brute-force, scanning, and recon attacks from Kali on Metasploitable 2</description>
   <row>
     <panel>
-      <title>FTP Logins</title>
+      <title>FTP Brute Force Attempts</title>
       <chart>
         <search>
-          <query>index=linux_logs sourcetype=syslog "ftp"</query>
+          <query>index=linux_logs sourcetype=syslog "530 Login incorrect" | stats count by src_ip</query>
         </search>
-        <option name="charting.chart">column</option>
+        <option name="charting.chart">bar</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>SSH Brute Force Attempts</title>
+      <chart>
+        <search>
+          <query>index=linux_logs sourcetype=syslog "Failed password" | stats count by src_ip</query>
+        </search>
+        <option name="charting.chart">bar</option>
       </chart>
     </panel>
   </row>
-</form>
-
+  <row>
+    <panel>
+      <title>Nikto Web Scan Requests</title>
+      <table>
+        <search>
+          <query>index=linux_logs sourcetype=syslog ("Nikto" OR "GET /") | stats count by _time, src_ip</query>
+        </search>
+      </table>
+    </panel>
+    <panel>
+      <title>Nmap Port Scans</title>
+      <table>
+        <search>
+          <query>index=linux_logs sourcetype=syslog ("nmap" OR "SYN") | stats count by dest_port, src_ip</query>
+        </search>
+      </table>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Top Attacker IPs</title>
+      <chart>
+        <search>
+          <query>index=linux_logs sourcetype=syslog | stats count by src_ip | sort -count</query>
+        </search>
+        <option name="charting.chart">pie</option>
+      </chart>
+    </panel>
+  </row>
+</dashboard>
