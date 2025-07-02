@@ -1,56 +1,18 @@
-# 🚨 Splunk Alert Configuration – Cyber Attack Detection
+📄 Enhance alert_configuration.md with real-world FTP brute-force detection example
 
-## 🎯 Objective
+This update adds a clear and actionable step-by-step walkthrough to `alert_configuration.md`
+demonstrating how to configure a Splunk alert to detect FTP brute-force attacks.
 
-Create alerts in Splunk to **detect real-time attacks** and notify you (via log, email, or UI) when suspicious behavior is identified on the Metasploitable 2 target system.
+Key additions include:
+- Objective section explaining the purpose of alerts for cyberattack detection
+- Prerequisite checks (index, sourcetype, data ingestion)
+- Full example for detecting repeated "530 Login incorrect" messages
+- UI navigation for creating alerts in Splunk Search & Reporting
+- Recommended alert configuration fields (title, type, trigger, condition)
+- Actions like logging, email, and dashboard inclusion
 
----
+This helps showcase practical blue team skills, detection engineering, and SIEM alerting,
+and is suitable for recruiters or cybersecurity portfolios.
 
-## 📘 Prerequisites
-
-- Index: `linux_logs`
-- Sourcetype: `syslog`
-- Data is being received in real-time (test with: `index=linux_logs`)
-
----
-
-## 🔹 How to Create an Alert (Step-by-Step)
-
-### Step 1: Go to Splunk Search
-
-- Navigate to: **Search & Reporting → Search**
-
----
-
-### Step 2: Run an Attack-Specific Search
-
-Example for FTP brute-force:
-
-```spl
-index=linux_logs sourcetype=syslog "530 Login incorrect"
-Verify that logs appear before turning into alert.
-
-#Step 3: Save As Alert
-Click Save As → Alert
-
-Fill out the alert settings:
-
-Field	Value
-Title	FTP Brute Force Detected
-Description	Triggered when multiple FTP login failures occur
-Alert Type	Scheduled or Real-time
-Time Range	Last 15 Minutes
-Trigger Condition	Number of Results > 10
-Trigger Alert	Once
-
-Trigger Actions:
-
-✅ Log Event (built-in)
-
-✅ Email (configure below)
-
-✅ Add to Triggered Alerts dashboard
-
-Click Save
 
 
