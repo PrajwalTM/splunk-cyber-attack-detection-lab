@@ -19,6 +19,12 @@ Use **Nikto** (a web scanner) to detect vulnerabilities in the Metasploitable 2 
 
 ---
 
+### 🔎 Nikto Web Scan from Kali
+
+This screenshot shows the Nikto command executed in Kali Linux targeting the vulnerable Metasploitable 2 machine.
+
+![Nikto Scan from Kali](../screenshots/nikto_scan_kali.png)
+
 ## ⚔️ Attack Command (Nikto)
 
 ```bash
