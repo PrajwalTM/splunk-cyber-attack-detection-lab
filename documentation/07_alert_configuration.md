@@ -30,7 +30,7 @@ Example for FTP brute-force:
 index=linux_logs sourcetype=syslog "530 Login incorrect"
 Verify that logs appear before turning into alert.
 
-Step 3: Save As Alert
+#Step 3: Save As Alert
 Click Save As → Alert
 
 Fill out the alert settings:
