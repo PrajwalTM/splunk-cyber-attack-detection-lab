@@ -51,7 +51,7 @@ This project simulates real-world attacks using **Kali Linux** on a vulnerable *
 - [FTP Brute Force Attack](documentation/02_attack_ftp_bruteforce.md)
 - [SSH Brute Force Attack](documentation/03_attack_ssh_scan.md)
 - [Creating Dashboards](documentation/04_splunk_dashboard.md)
-- [Alert Configuration](documentation/05_alert_configuration.md)
+- [Alert Configuration](documentation/07_alert_configuration.md)
 
 ---
 
