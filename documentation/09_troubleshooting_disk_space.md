@@ -37,21 +37,24 @@ MinFreeSpace=5000. The diskspace remaining=7663 is less than 2 x minFreeSpace on
 
 Open PowerShell or CMD as Administrator:
 
-```bash
+```
 cd "C:\Program Files\Splunk\bin"
 splunk stop
 Wait for confirmation that Splunk has stopped completely.
+```
 
-Step 2: Clean Index Data
+### Step 2: Clean Index Data
+
 After Splunk is stopped, run:
-
+```
 splunk clean eventdata -index _internal
 splunk clean eventdata -index _audit
 splunk clean eventdata -index _metrics
 This removes old internal logs.
+```
 
 ❗ Only do this in lab/test environments. Don't clean indexes in production without a retention plan.
 
-Step 3: Start Splunk
-
+### Step 3: Start Splunk
+```
 splunk start
