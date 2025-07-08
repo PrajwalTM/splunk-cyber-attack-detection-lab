@@ -10,9 +10,6 @@ This means your system is **running low on disk space**, especially under:
 
 C:\Program Files\Splunk\var\lib\splunk\
 
-markdown
-Copy
-Edit
 
 This affects internal indexes like:
 
@@ -31,9 +28,6 @@ Splunk uses a `minFreeSpace` threshold (default: 5,000 MB). If the available dis
 > Example log message:
 MinFreeSpace=5000. The diskspace remaining=7663 is less than 2 x minFreeSpace on C:\Program Files\Splunk\var\lib\splunk_internaldb
 
-yaml
-Copy
-Edit
 
 ---
 
@@ -51,9 +45,6 @@ Wait for confirmation that Splunk has stopped completely.
 Step 2: Clean Index Data
 After Splunk is stopped, run:
 
-bash
-Copy
-Edit
 splunk clean eventdata -index _internal
 splunk clean eventdata -index _audit
 splunk clean eventdata -index _metrics
@@ -62,7 +53,5 @@ This removes old internal logs.
 ❗ Only do this in lab/test environments. Don't clean indexes in production without a retention plan.
 
 Step 3: Start Splunk
-bash
-Copy
-Edit
+
 splunk start
