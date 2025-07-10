@@ -1,9 +1,15 @@
 # 🔍 Splunk Cyber Attack Detection Lab
 
+![Platform](https://img.shields.io/badge/Platform-VirtualBox%20%7C%20VMware-blue)
 ![Splunk](https://img.shields.io/badge/SIEM-Splunk-blue)
 ![Kali Linux](https://img.shields.io/badge/Kali-Tools-black)
 ![Metasploitable2](https://img.shields.io/badge/Victim-Metasploitable2-red)
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE-TTPs-yellow)
+![SIEM](https://img.shields.io/badge/SIEM-Splunk%20Enterprise-orange)
+![Target](https://img.shields.io/badge/Target-Metasploitable2-red)
+![Tools](https://img.shields.io/badge/Tools-Kali%20Linux%2C%20Nmap%2C%20Hydra-brightgreen)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
 
 A hands-on project simulating real-world cyber attacks using **Kali Linux** against **Metasploitable 2**, with log monitoring and alerting in **Splunk Enterprise**. This lab showcases threat detection, SIEM dashboards, and alerting mechanisms in a controlled environment — ideal for learning, research, or demonstrating cybersecurity skills to recruiters.
 
