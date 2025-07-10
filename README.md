@@ -41,7 +41,21 @@ A hands-on project simulating real-world cyber attacks using **Kali Linux** agai
 - 📈 **Splunk Enterprise** — Detect, alert, visualize threats
 
 ---
+**VirtualBox/VMware Network Configuration:**
 
+- Adapter 1: NAT (for internet)
+- Adapter 2: Host-only (for internal attack traffic)
+
+---
+
+## 🔧 Tools Used
+
+- 💻 Kali Linux: `hydra`, `nmap`, `nikto`, `msfconsole`
+- 🐧 Metasploitable 2: vulnerable services like FTP, SSH, Telnet, MySQL
+- 📊 Splunk Enterprise (Windows): syslog receiver, dashboard, alert engine
+- 🔐 Rsyslog: log forwarder from Metasploitable to Splunk
+
+---
 ## 📂 Table of Contents
 
 - [`01_lab_setup.md`](documentation/01_lab_setup.md)
