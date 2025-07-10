@@ -2,12 +2,11 @@
 
 ![Platform](https://img.shields.io/badge/Platform-VirtualBox%20%7C%20VMware-blue)
 ![Splunk](https://img.shields.io/badge/SIEM-Splunk-blue)
-![Kali Linux](https://img.shields.io/badge/Kali-Tools-black)
 ![Metasploitable2](https://img.shields.io/badge/Victim-Metasploitable2-red)
-![MITRE ATT&CK](https://img.shields.io/badge/MITRE-TTPs-yellow)
 ![SIEM](https://img.shields.io/badge/SIEM-Splunk%20Enterprise-orange)
 ![Target](https://img.shields.io/badge/Target-Metasploitable2-red)
 ![Tools](https://img.shields.io/badge/Tools-Kali%20Linux%2C%20Nmap%2C%20Hydra-brightgreen)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE-TTPs-yellow)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
 
