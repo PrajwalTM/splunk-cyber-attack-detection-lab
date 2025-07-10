@@ -128,9 +128,6 @@ Screenshots are organized here:
 
 ---
 
-## 💬 Contact
-
-
 ---
 
 ## 💡 How to Use This Project
@@ -148,7 +145,7 @@ Screenshots are organized here:
 > Open to feedback and collaboration!  
 📧 Email: [prajwaltm42@gmail.com](mailto:prajwaltm42@gmail.com)  
 🔗 [LinkedIn – Prajwal T M](https://www.linkedin.com/in/prajwal-t-m-585b81255/)
-🔗 [Github – Prajwal T M](https://github.com/PrajwalTM/)
+> 🔗 [Github – Prajwal T M](https://github.com/PrajwalTM/)
 
 ## 📘 License
 
