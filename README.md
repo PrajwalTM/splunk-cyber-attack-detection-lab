@@ -132,11 +132,3 @@ Screenshots are organized here:
 This project is for **educational** and **demonstration** purposes only. No real-world production use.
 
 
-
-![Platform](https://img.shields.io/badge/Platform-VirtualBox%20%7C%20VMware-blue)
-![SIEM](https://img.shields.io/badge/SIEM-Splunk%20Enterprise-orange)
-![Target](https://img.shields.io/badge/Target-Metasploitable2-red)
-![Tools](https://img.shields.io/badge/Tools-Kali%20Linux%2C%20Nmap%2C%20Hydra-brightgreen)
-![Status](https://img.shields.io/badge/Status-Completed-success)
-
-
