@@ -130,9 +130,6 @@ Screenshots are organized here:
 
 ## 💬 Contact
 
-> Open to feedback and collaboration!  
-📧 Email: [prajwaltm42@gmail.com](mailto:prajwaltm42@gmail.com)  
-🔗 [LinkedIn – Prajwal T M](https://www.linkedin.com/in/prajwal-t-m-585b81255/)
 
 ---
 
@@ -145,6 +142,13 @@ Screenshots are organized here:
 5. Customize or add more scenarios!
 
 ---
+
+## 🌐 Author & Contact
+👤 Prajwal T M
+> Open to feedback and collaboration!  
+📧 Email: [prajwaltm42@gmail.com](mailto:prajwaltm42@gmail.com)  
+🔗 [LinkedIn – Prajwal T M](https://www.linkedin.com/in/prajwal-t-m-585b81255/)
+🔗 [Github – Prajwal T M](https://github.com/PrajwalTM/)
 
 ## 📘 License
 
