@@ -27,16 +27,9 @@ This folder contains all visual proof (screenshots) of attack executions, log vi
 
 ---
 
-## 🔎 Step 03 – SSH Brute Force (optional)
-
-| Description | File |
-|------------|------|
-| Hydra SSH brute-force attack | `hydra_ssh_attack.png` |
-| SSH logs seen in Splunk | `ssh_logs_in_splunk.png` |
-
 ---
 
-## 🌐 Step 04 – Nikto Web Scan Attack
+## 🌐 Step 03 – Nikto Web Scan Attack
 
 | Description | File |
 |------------|------|
@@ -47,7 +40,7 @@ This folder contains all visual proof (screenshots) of attack executions, log vi
 
 ---
 
-## 📊 Step 05 – Dashboard Monitoring
+## 📊 Step 04 – Dashboard Monitoring
 
 | Description | File |
 |------------|------|
@@ -58,7 +51,7 @@ This folder contains all visual proof (screenshots) of attack executions, log vi
 
 ---
 
-## 🔔 Step 06 – Alert Setup and Trigger
+## 🔔 Step 05 – Alert Setup and Trigger
 
 | Description | File |
 |------------|------|
@@ -67,14 +60,5 @@ This folder contains all visual proof (screenshots) of attack executions, log vi
 
 ---
 
-## 📧 Step 07 – Email Configuration (Optional)
 
-| Description | File |
-|------------|------|
-| Splunk email setup with Gmail SMTP | `email_settings_config.png` |
-| Email received after attack alert | `test_email_result.png` |
-
----
-
-> ✏️ Add more screenshots as you expand your attacks or dashboards. Use clear naming so your viewers can follow along easily!
 
