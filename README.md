@@ -1,7 +1,6 @@
 # 🔍 Splunk Cyber Attack Detection Lab
 
 ![Platform](https://img.shields.io/badge/Platform-VirtualBox%20%7C%20VMware-blue)
-![Splunk](https://img.shields.io/badge/SIEM-Splunk-blue)
 ![Metasploitable2](https://img.shields.io/badge/Victim-Metasploitable2-red)
 ![SIEM](https://img.shields.io/badge/SIEM-Splunk%20Enterprise-orange)
 ![Target](https://img.shields.io/badge/Target-Metasploitable2-red)
