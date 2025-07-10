@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="Splunk Cyber Attack Detection Lab" width="100%">
+</p>
+
 # 🔍 Splunk Cyber Attack Detection Lab
 
 ![Platform](https://img.shields.io/badge/Platform-VirtualBox%20%7C%20VMware-blue)
