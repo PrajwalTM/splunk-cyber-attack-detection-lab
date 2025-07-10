@@ -8,5 +8,4 @@ Screenshots showing Splunk configuration, dashboard panels, alerts, and email se
 | 2. | `09_splunk_dashboard_panel.png` | Custom dashboard with FTP brute-force panel |
 | 3. | `10_splunk_alerts_config.png` | Creating a new alert in Splunk |
 | 4. | `11_splunk_triggered_alert.png` | Triggered alert notification |
-| 5. | `12_splunk_email_setup.png` | SMTP configuration for email alerts |
-| 6. | `13_splunk_log_event_action.png` | Configuring Log Event as a trigger action |
+| 5. | `12_splunk_log_event_action.png` | Configuring Log Event as a trigger action |
