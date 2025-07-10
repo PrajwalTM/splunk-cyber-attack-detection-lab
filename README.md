@@ -56,8 +56,6 @@ A hands-on project simulating real-world cyber attacks using **Kali Linux** agai
 
 > View your real-time attacks on the dashboard.
 
-🖼️ Screenshot:  
-
 💾 Dashboard XML: [`dashboards/attack_monitoring.xml`](dashboards/attack_monitoring.xml)
 
 ---
