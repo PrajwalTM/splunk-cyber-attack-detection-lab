@@ -9,9 +9,24 @@ A hands-on project simulating real-world cyber attacks using **Kali Linux** agai
 
 ---
 
-🧠 Lab Architecture
-<pre> +----------------------+ | Kali Linux | | (Attacker - .103) | +----------+-----------+ | [ Simulated Attacks ] | +----------v-----------+ | Metasploitable 2 | | (Victim - .105) | +----------+-----------+ | [ Rsyslog Log Forward ] | +----------v-----------+ | Splunk Enterprise | | (SIEM - Win .104) | +----------------------+ </pre>
-
+     +------------------+
+     |  Kali Linux      |
+     |  Attacker (103)  |
+     +--------+---------+
+              |
+      Simulated Attacks
+              ↓
+     +--------+---------+
+     | Metasploitable 2 |
+     | Victim (105)     |
+     +--------+---------+
+              |
+     Rsyslog Forwarding
+              ↓
+     +--------+---------+
+     | Splunk Enterprise |
+     | SIEM (Windows 104)|
+     +------------------+
 
 - 🧪 **Kali Linux** — Brute-force, scanning, exploit tools  
 - 🔓 **Metasploitable 2** — Target with vulnerable services  
