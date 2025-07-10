@@ -9,8 +9,6 @@ A hands-on project simulating real-world cyber attacks using **Kali Linux** agai
 
 ---
 
-## 🧠 Architecture
-
      +------------------+
      |  Kali Linux      |
      |  Attacker (103)  |
@@ -29,8 +27,6 @@ A hands-on project simulating real-world cyber attacks using **Kali Linux** agai
      | Splunk Enterprise |
      | SIEM (Windows 104)|
      +------------------+
-
-
 
 - 🧪 **Kali Linux** — Brute-force, scanning, exploit tools  
 - 🔓 **Metasploitable 2** — Target with vulnerable services  
@@ -134,4 +130,13 @@ Screenshots are organized here:
 ## 📘 License
 
 This project is for **educational** and **demonstration** purposes only. No real-world production use.
+
+
+
+![Platform](https://img.shields.io/badge/Platform-VirtualBox%20%7C%20VMware-blue)
+![SIEM](https://img.shields.io/badge/SIEM-Splunk%20Enterprise-orange)
+![Target](https://img.shields.io/badge/Target-Metasploitable2-red)
+![Tools](https://img.shields.io/badge/Tools-Kali%20Linux%2C%20Nmap%2C%20Hydra-brightgreen)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
 
